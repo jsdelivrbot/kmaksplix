@@ -26,14 +26,24 @@
 
 
         var leaderboard = document.getElementById("leaderboard");
-        leaderboard.style.top = "48px";
+        leaderboard.style.top = "75px";
         var myCssText = "color:white; font-weight: 700; position:fixed; right:  13px; top: 8px; z-index:100; padding: 5px 10px; opacity: .7; transform-orign: right top;";
 
         var myDiv = document.createElement("div");
         myDiv.className  = "greenBox";
         myDiv.style.cssText = myCssText;
-        myDiv.innerHTML = "Made by KMak<br>It's lit bro xDxDxDxD";
+        myDiv.innerHTML = 'Made by KMak<br>It is lit bro xDxDxDxD<br><span id="kmakxy"></span>';
 
+        setTimeout(function () {
+          var kmakxy = document.getElementById("kmakxy")
+        
+          var xyloop = setInterval(function () {
+            var kmakx = myPlayer.pos[0]
+            var kmaky = myPlayer.pos[1]
+
+            kmakxy.innerHTML = "X: " + kmakx + " Y: " + kmaky
+          }, 100)
+        }, 250)
         var scorebox = document.getElementById("scoreBlock");
 
         scorebox.innerHTML += "<br><span><span>Obese people on team: 999</span></span><br>"
