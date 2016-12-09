@@ -7,8 +7,9 @@
 // @run-at       document-start
 // @grant        GM_xmlhttpRequest
 // @connect      splix.io
+// @namespace 	 http://splix.io
 // ==/UserScript==
 
 var sc = document.createElement("SCRIPT");
-sc.src = "https://raw.githubusercontent.com/bobmcdouble3/kmaksplix/master/kmaksplix.js";
+sc.src = "https://rawgit.com/bobmcdouble3/kmaksplix/master/kmaksplix.js";
 document.documentElement.appendChild(sc);
