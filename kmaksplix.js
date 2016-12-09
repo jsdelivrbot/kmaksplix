@@ -44,9 +44,9 @@
             kmakxy.innerHTML = "X: " + kmakx + " Y: " + kmaky
           }, 100)
         }, 250)
-        var scorebox = document.getElementById("scoreBlock");
+        // var scorebox = document.getElementById("scoreBlock");
 
-        scorebox.innerHTML += "<br><span><span>Obese people on team: 999</span></span><br>"
+        // scorebox.innerHTML += "<br><span><span>Obese people on team: 999</span></span><br>"
         leaderboard.parentNode.insertBefore(myDiv, leaderboard.nextSibling);
 
         uiElems.push(myDiv);
