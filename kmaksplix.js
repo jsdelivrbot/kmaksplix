@@ -59,8 +59,24 @@
                 }
             }, 100);
 
+
+        var autosquare = false;
+        var autosquarei = 0
+        var autosquareloop = setInterval(function(){
+                
+                if(autosquare) {
+                    autosquarei += 1
+                    sendDir((myPlayer.dir + 1)%4);
+
+                }
+                if (autosquarei == 4) {
+                  autosquarei = 0
+                  autosquare = false
+                }
+            }, 3000);
         window.addEventListener("keyup", function(e){
             if(e.keyCode == 80) paused ^= true;
+            if(e.keyCode == 72) autosquare ^= true;
         });
 
         var nameForm = document.getElementById("nameForm");
