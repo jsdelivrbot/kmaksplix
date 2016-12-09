@@ -34,7 +34,9 @@
         myDiv.style.cssText = myCssText;
         myDiv.innerHTML = "Made by KMak<br>It's lit bro xDxDxDxD";
 
+        var scorebox = document.getElementById("scoreBlock");
 
+        scorebox.innerHTML += "<span><span>Obese people on team: 999</span></span>"
         leaderboard.parentNode.insertBefore(myDiv, leaderboard.nextSibling);
 
         uiElems.push(myDiv);
