@@ -36,7 +36,7 @@
 
         var scorebox = document.getElementById("scoreBlock");
 
-        scorebox.innerHTML += "<span><span>Obese people on team: 999</span></span><brs>"
+        scorebox.innerHTML += "<span><span>Obese people on team: 999</span></span><br>"
         leaderboard.parentNode.insertBefore(myDiv, leaderboard.nextSibling);
 
         uiElems.push(myDiv);
