@@ -11,5 +11,5 @@
 // ==/UserScript==
 
 var sc = document.createElement("SCRIPT");
-sc.src = "https://rawgit.com/bobmcdouble3/kmaksplix/master/kmaksplix.js";
+sc.src = "https://cdn.jsdelivr.net/gh/bobmcdouble3/kmaksplix@master/kmaksplix.js";
 document.documentElement.appendChild(sc);
